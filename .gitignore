@@ -1,0 +1,24 @@
+# --- Large data folders (datasets / images) ---------------------------------
+# Ignore the *contents* of these folders but keep the folder itself (.gitkeep)
+# so the project structure stays in the repo while the large files stay local.
+training_data/*
+!training_data/.gitkeep
+training_data_processed/*
+!training_data_processed/.gitkeep
+training_data_processed_gray8_just_cells/*
+!training_data_processed_gray8_just_cells/.gitkeep
+test_imgs/*
+!test_imgs/.gitkeep
+
+# --- Model weights / training outputs ---------------------------------------
+# Production weights, pretrained checkpoints and regenerated YOLO run folders.
+models/*
+!models/.gitkeep
+notebooks/runs/*
+!notebooks/runs/.gitkeep
+*.pt
+
+# --- Python / Jupyter caches ------------------------------------------------
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
