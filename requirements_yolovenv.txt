@@ -1,0 +1,17 @@
+# yolovenv — environment for the PIPE-7270 cell-segmentation project.
+#
+# Tested with Python 3.9 on WSL (Ubuntu) with an NVIDIA GPU (CUDA 12.x).
+# These are the versions verified to work together; loosen the pins if you
+# need to. NumPy is held below 2.0 because the project was built and tested
+# against the NumPy 1.x ABI.
+#
+# Install instructions are in README.md ("Environment setup").
+
+ultralytics==8.4.68      # YOLO11 / YOLOv8 training + inference
+torch==2.8.0             # install the CUDA build via the PyTorch index (see README)
+numpy<2                   # 1.26.x — kept on the 1.x ABI
+opencv-python==4.7.0.72  # cv2: image I/O, mask cleanup, mp4 writing
+pillow>=10.0             # PIL: image loading (16-bit TIFF support)
+matplotlib>=3.9          # plotting in the training notebooks
+pyyaml>=6.0              # reads/writes the YOLO data.yaml
+streamlit>=1.30          # the interactive segmentation app

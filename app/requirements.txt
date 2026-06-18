@@ -1,0 +1,6 @@
+# Streamlit app dependencies for the cell segmentation viewer.
+# Torch/ultralytics versions should match your training environment; pin if needed.
+streamlit>=1.30
+ultralytics>=8.3
+pillow>=10.0
+numpy>=1.24

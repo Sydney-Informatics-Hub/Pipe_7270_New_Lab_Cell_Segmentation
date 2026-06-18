@@ -1,0 +1,6 @@
+path: /home/rhar4542/APPN_WSL_CODE/Pipe_7270_New_Lab_Cell_Segmentation/training_data_processed_gray8_just_cells
+train: train/images
+val: val/images
+test: test/images
+names:
+  0: Cell
